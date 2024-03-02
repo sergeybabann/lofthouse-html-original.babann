@@ -1,7 +1,15 @@
 body {
   font-family: $font-main;
+  background-color: $dark;
+  color: $white;
+  font-size: 16px;
 }
 
-p {
-  font-weight: 700;
+a {
+  color: $white;
+  transition: color 0.2s ease-in;
+
+  &:hover {
+    color: $accent;
+  }
 }
