@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'Raleway';
+  src: url('Raleway-Regular.eot');
+  src: local('Raleway Regular'), local('Raleway-Regular'),
+    url('../fonts/raleway/Raleway-Regular.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/raleway/Raleway-Regular.woff2') format('woff2'),
+    url('../fonts/raleway/Raleway-Regular.woff') format('woff'),
+    url('../fonts/raleway/Raleway-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('Raleway-Bold.eot');
+  src: local('Raleway Bold'), local('Raleway-Bold'),
+    url('../fonts/raleway/Raleway-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/raleway/Raleway-Bold.woff2') format('woff2'),
+    url('../fonts/raleway/Raleway-Bold.woff') format('woff'),
+    url('../fonts/raleway/Raleway-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Lt';
+  src: url('Roboto-Light.eot');
+  src: local('Roboto Light'), local('Roboto-Light'),
+    url('../fonts/roboto/Roboto-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/roboto/Roboto-Light.woff2') format('woff2'),
+    url('../fonts/roboto/Roboto-Light.woff') format('woff'),
+    url('../fonts/roboto/Roboto-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('fonts/playfair_display/PlayfairDisplay-Bold.eot');
+  src: local('Playfair Display Bold'), local('PlayfairDisplay-Bold'),
+    url('../fonts/playfair_display/PlayfairDisplay-Bold.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/playfair_display/PlayfairDisplay-Bold.woff2') format('woff2'),
+    url('../fonts/playfair_display/PlayfairDisplay-Bold.woff') format('woff'),
+    url('../fonts/playfair_display/PlayfairDisplay-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}

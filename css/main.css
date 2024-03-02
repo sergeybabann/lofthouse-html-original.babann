@@ -107,3 +107,11 @@ label {
 legend {
   display: block;
 }
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+p {
+  font-weight: 700;
+}
