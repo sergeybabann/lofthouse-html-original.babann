@@ -123,3 +123,93 @@ a {
 a:hover {
   color: #d4c17f;
 }
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 1140px;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 840px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(11.979%, rgb(36, 43, 51)), color-stop(51.042%, rgba(45, 52, 60, 0.38)), color-stop(92.188%, rgb(36, 43, 51))), url("./../img/header/header-bg.jpg");
+  background: linear-gradient(180deg, rgb(36, 43, 51) 11.979%, rgba(45, 52, 60, 0.38) 51.042%, rgb(36, 43, 51) 92.188%), url("./../img/header/header-bg.jpg");
+  padding-top: 30px;
+  padding-bottom: 74px;
+}
+
+.header__top-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__title {
+  position: relative;
+  padding-bottom: 121px;
+  text-align: center;
+  font-size: 48px;
+  font-family: "Playfair Display", serif;
+  color: #d4c17f;
+  font-weight: 700;
+}
+
+.header__title-icon {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50% 0%);
+          transform: translate(-50% 0%);
+}
+
+.nav {
+  font-size: 14px;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
+}
+
+.info {
+  position: relative;
+  font-size: 18px;
+}
+.info--map, .info--tel {
+  padding-left: 35px;
+}
+.info--map::before, .info--tel::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 21px;
+  height: 21px;
+  background-repeat: no-repeat;
+}
+.info--map::before {
+  background-image: url("./../img/header/map.svg");
+}
+.info--tel::before {
+  background-image: url("./../img/header/phone.svg");
+}

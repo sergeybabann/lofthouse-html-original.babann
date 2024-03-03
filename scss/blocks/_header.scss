@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 840px;
+  background: linear-gradient(
+      180deg,
+      rgb(36, 43, 51) 11.979%,
+      rgba(45, 52, 60, 0.38) 51.042%,
+      rgb(36, 43, 51) 92.188%
+    ),
+    url('./../img/header/header-bg.jpg'); // путь прописан для папки css
+
+  padding-top: 30px;
+  padding-bottom: 74px;
+}
+
+.header__top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__title {
+  position: relative;
+  padding-bottom: 121px;
+  text-align: center;
+  font-size: 48px;
+  font-family: $font-accent;
+  color: $accent;
+  font-weight: 700;
+}
+
+.header__title-icon {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50% -0%);
+}
