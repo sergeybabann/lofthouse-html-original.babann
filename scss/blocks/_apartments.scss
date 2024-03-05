@@ -1,0 +1,13 @@
+.apartments {
+}
+
+.apartments__title {
+  margin-bottom: 88px;
+}
+
+.apartments__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  // grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); // для адаптива
+  gap: 30px;
+}

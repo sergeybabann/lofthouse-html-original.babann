@@ -1,0 +1,27 @@
+.benefits {
+  padding: 120px 0;
+}
+
+.benefits__row {
+  display: flex;
+  column-gap: 70px;
+}
+
+.benefits__item {
+  text-align: center;
+}
+
+.benefits__item-img {
+  margin-bottom: 53px;
+}
+
+.benefits__item-text {
+  font-size: 20px;
+  line-height: 1.35;
+  font-family: $font-secondary;
+  font-weight: 300;
+
+  // line-height в макете изначально 27px, автор производит операцию деления (27 / 20 = 1.35)
+  // то есть значение line-height делит на значение font-size(20px)
+  // полученное значение 1.35 применяет к line-height
+}

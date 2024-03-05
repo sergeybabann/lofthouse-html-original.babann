@@ -17,9 +17,42 @@ a {
 .container {
   margin: 0 auto; // центрирование
   padding: 0 15px;
-  width: 1140px; // увеличили ширину контента на 30px потому, что есть два паддинга по бокам по 15px
+  max-width: 1140px; // увеличили ширину контента на 30px потому, что есть два паддинга по бокам по 15px
+
+  &--sm {
+    // container--sm
+    max-width: 840px;
+  }
 }
 
 .text-right {
   text-align: right;
+}
+
+.visually-hidden {
+  height: 1px;
+  overflow: hidden;
+  width: 1px;
+
+  /* Keep the layout */
+  position: absolute;
+
+  /* Remove and visible trace (e.g. background color) */
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px 1px 1px 1px);
+  clip-path: inset(50%); /* browsers in the future*/
+
+  /* Prevent the screen reader to skeep spaces between words */
+  white-space: nowrap;
+}
+
+.none {
+  display: none !important;
+}
+
+.title-2 {
+  font-size: 36px;
+  font-family: $font-accent;
+  color: $accent;
+  font-weight: 700;
 }

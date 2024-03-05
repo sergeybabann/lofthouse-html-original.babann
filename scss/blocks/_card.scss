@@ -1,0 +1,59 @@
+.card {
+  display: inline-block;
+  position: relative;
+  overflow: hidden; // за пределы карточки ничего не выходит
+
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: 6;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(36, 43, 51, 0), $dark 100%);
+  }
+
+  &::after {
+    opacity: 0;
+    content: '';
+    position: absolute;
+    z-index: 7;
+    left: 15px;
+    top: 15px;
+    right: 15px;
+    bottom: 15px;
+    border: 3px double rgba(255, 255, 255, 0.4);
+    transition: opacity 0.2s ease-in;
+  }
+
+  &:hover {
+    color: $white;
+  }
+
+  &:hover::after {
+    // показвает border
+    opacity: 1;
+  }
+}
+
+.card__img {
+  transition: all 0.2s ease-in; // плавное увеличение картинки при наведении на нее
+  position: relative;
+  z-index: 5;
+}
+
+.card:hover .card__img {
+  // эффекты при наведении на картинку
+  transform: scale(1.1);
+  filter: contrast(110%) brightness(1.2) saturate(1.2);
+}
+
+.card__title {
+  position: absolute;
+  z-index: 9;
+  left: 50px;
+  right: 20px;
+  bottom: 44px;
+  font-size: 24px;
+}
