@@ -12,14 +12,17 @@ video stop:
 
 * Сначала подключаем vars, а потом base в файле main.scss (в импортах)
 
+
 * Путь к картинкам в файлах scss нужно прописывать с учетом того, что путь будет таким же, как путь
 из папки css. Так как все сохраняется при компиляции туда. И поэтому мы прописываем путь для background 
-такой: 
+соответствующий. 
+
 
 * В секции apartments есть картинки (фото). Нужно всегда смотреть есть ли у картинок linear gradient или нет. 
-Если есть, то делать их экспорт необходимо при отключенном linear gradient. Отключить его можно нажав на глаз, при выделенной
-картинке он становится виден. И потом этот linear gradient создается в стилях.
-* Сохранить все картинки одним экспортом нужно выделяя их правой кнопкой мыши при нажатых кнопках на клавиатуре cmd + shift 
+Если есть, то делать их экспорт необходимо при отключенном linear gradient. Отключить его можно нажав на глаз, при 
+выделенной картинке он становится виден. И потом этот linear gradient создается в стилях.
+* Сохранить все картинки одним экспортом нужно выделяя их правой кнопкой мыши при нажатых кнопках на 
+клавиатуре cmd + shift 
 
 
 * Стандартные значения для overlay:
@@ -49,5 +52,24 @@ video stop:
 font-size: 13px;
 line-height: 16px; 
 
-Поделить line-height на font-size
+Итого: Поделить line-height на font-size
+
+
+* Заголовок для SEO есть в разметке HTML , но он скрывается и его не видно. Делается это при помощи класса
+.visually-hidden {
+  height: 1px;
+  overflow: hidden;
+  width: 1px;
+
+  /* Keep the layout */
+  position: absolute;
+
+  /* Remove and visible trace (e.g. background color) */
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px 1px 1px 1px);
+  clip-path: inset(50%); /* browsers in the future*/
+
+  /* Prevent the screen reader to skeep spaces between words */
+  white-space: nowrap;
+}
 
