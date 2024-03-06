@@ -29,3 +29,25 @@ video stop:
     width: 100%;
     height: 100%;
     background: rgba(86, 86, 86, 0.5);
+
+
+*  Linear-gradient:
+    background: linear-gradient(
+      180deg,
+      rgb(36, 43, 51) 10.417%,
+      rgba(36, 43, 51, 0) 50.521%,
+      rgb(36, 43, 51) 90.104%
+    ),
+    linear-gradient(0deg, rgba(36, 43, 51, 0.9)),
+    url('./../../img/cta/cta-bg.jpg'), rgb(196, 196, 196);
+
+
+* Получить значение line-height в единицах измерения em через операцию деления двух правил можно так:
+16 / 13 = 1.23em
+
+Расшифровка:
+font-size: 13px;
+line-height: 16px; 
+
+Поделить line-height на font-size
+
